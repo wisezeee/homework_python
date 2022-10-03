@@ -6,7 +6,7 @@ def cal(d, m, y):
     if 0 < d <= 30 and m in m_30d:
         return True
     if m == 2:
-        if y % 100 != 0 and y % 4 == 0 or y % 100 == 0 and y % 400 == 0:   #Високосный год кратен 4, но при этом не кратен 100, либо кратен 400
+        if y % 100 != 0 and y % 4 == 0 or y % 100 == 0 and y % 400 == 0:
             if 0 < d <= 29:
                 return True
         if 0 < d <= 28:
