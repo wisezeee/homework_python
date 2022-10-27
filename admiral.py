@@ -7,10 +7,8 @@ def admiral(filename):
         msg = input('[+] Запись капитана: ')
         time = input('[+] Дата и время: ')
         with open(f'{path}/{filename}', 'a') as file:
-            file.write(f'{time} - {msg} \n')
-            file.close()
+            file.write(f'{time} - {msg} \n'
     else:
-        with open(f'{path}/{filename}', 'w') as file:
-            file.close()
-        return admiral(filename)
+        with open(f'{path}/{filename}', 'w') as file
+            return admiral(filename)
 
